@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-fr-ca-override"],{d58a:function(i){i.exports=JSON.parse('{"fr-ca":{"Pin verification failed.":"Échec de la vérification du code"}}')}}]);

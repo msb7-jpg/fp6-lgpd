@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-translator_blacklist"],{"70ba":function(o){o.exports=JSON.parse('["Auti","Cookie","Cookies"]')}}]);

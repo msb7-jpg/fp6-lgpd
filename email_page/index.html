@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" /><link rel="apple-touch-icon" href="privacy-central.securiti.ai/static/favicon.png" /><link rel="icon" href="privacy-central.securiti.ai/static/favicon.png" /><title>Privacy Central</title><script src="privacy-central.securiti.ai/static/polyfills/customEventPolyfill.js"></script><script src="privacy-central.securiti.ai/static/js/nr.js"></script><script src="privacy-central.securiti.ai/static/js/userback.js"></script><link href="privacy-central.securiti.ai/assets/css/chunk-7c38599f.445023e9.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-auth~chunk-edit-user-profile~chunk-set-password.4254a332.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-cmp-form-purpose-preference-centre.ceed583f.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-cmp-success-page.01c82a84.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-consent.56107b60.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-consent~chunk-form-submission~chunk-privacy-center~supplemental-form-page.a6eaead6.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-edit-user-profile.2c0eaa3d.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-form-submission.4cfa4339.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-landing~chunk-privacy-center.b256106f.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-notice.5e42fffe.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-notice~chunk-privacy-center.a7bf3022.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-pin-validation.1a7470e8.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-privacy-center.0ebe86f5.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-set-password.486e5aa1.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-unico-verification.63649e5c.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/chunk-vendors-list.e151c22b.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/supplemental-form-page.3251f4bd.css" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-1cd5a758.e344cb8f.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-2d224d0f.8bb01ccd.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-676552f2.7e84f790.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-7c38599f.5007d456.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-876b5eaa.237ba9e7.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-auth.eec6f0a5.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-auth~chunk-edit-user-profile~chunk-set-password.d29c10d5.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-cmp-form-purpose-preference-centre.1d333dc8.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-cmp-success-page.537f2aed.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-consent.06e6dd36.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-consent~chunk-form-submission~chunk-privacy-center~supplemental-form-page.625bec34.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-edit-user-profile.3b89850b.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-f374666c.d220d238.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-form-submission.98a57e93.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-landing.1bb22bdd.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-landing~chunk-privacy-center.9501a46e.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ar-override.ff5db9b0.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ar.06a09191.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-bg.6fe36b10.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-bs.9fe516fa.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ca.9c84820b.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-cs.54ba3782.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-da.e1be48a7.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-de.abb5d0de.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-el.b232637a.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-es-override.bf70caa2.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-es.239c9068.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-et.ab7aed12.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-fi.d6a40d9b.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-fr-ca-override.910f35eb.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-fr-ca.f3f4886e.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-fr-override.1370b863.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-fr.27805f14.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-he.469dfac4.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-hi.5f2be3d5.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-hr.49bb2bcf.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-hu.112f1357.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-id.78a2f307.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-it.a871c681.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ja-override.e5767a95.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ja.c1d4e55c.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ka.98cfd26c.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ko.735758ba.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-lv.429c5a8c.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ms.7e00c7dd.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-nl.feab0902.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-no-override.ce38688d.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-no.e3009c64.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-pl.4a5c71e8.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-pt-br-override.b1a141cc.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-pt-br.f36812dd.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-pt-pt.de863e02.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ro.95f04e3c.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-ru.b3a547a2.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-sk.58197649.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-sl.4a1e4d0d.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-sq.21e69cd6.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-sr.c1ec6fca.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-sv.b7e196d6.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-th.2d60b51d.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-tr.f7a5058c.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-translator_blacklist.3f535631.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-uk.589266db.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-vi.b4f0ba37.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-zh-override.af8236b9.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-zh-tw-override.49ff7c01.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-zh-tw.baca569b.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-lang-zh.3d345866.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-notice.3caa3230.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-notice~chunk-privacy-center.6135cfca.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-pin-validation.8bae9837.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-privacy-center.9854929f.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-set-password.3d86d52d.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-unico-verification.182a3de1.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/chunk-vendors-list.2eab32aa.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/js/supplemental-form-page.bd8431f5.js" rel="prefetch" /><link href="privacy-central.securiti.ai/assets/css/app.1695402a.css" rel="preload" as="style" /><link href="privacy-central.securiti.ai/assets/css/chunk-vendors.56f5736f.css" rel="preload" as="style" /><link href="privacy-central.securiti.ai/assets/js/app.f033264b.js" rel="preload" as="script" /><link href="privacy-central.securiti.ai/assets/js/chunk-vendors.5f737c43.js" rel="preload" as="script" /><link href="privacy-central.securiti.ai/assets/css/chunk-vendors.56f5736f.css" rel="stylesheet" /><link href="privacy-central.securiti.ai/assets/css/app.1695402a.css" rel="stylesheet" /><style type="text/css">.toasted{padding:0 20px}.toasted.rounded{border-radius:24px}.toasted .primary,.toasted.toasted-primary{border-radius:2px;min-height:38px;line-height:1.1em;background-color:#353535;padding:6px 20px;font-size:15px;font-weight:300;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}.toasted .primary.success,.toasted.toasted-primary.success{background:#4caf50}.toasted .primary.error,.toasted.toasted-primary.error{background:#f44336}.toasted .primary.info,.toasted.toasted-primary.info{background:#3f51b5}.toasted .primary .action,.toasted.toasted-primary .action{color:#a1c2fa}.toasted.bubble{border-radius:30px;min-height:38px;line-height:1.1em;background-color:#ff7043;padding:0 20px;font-size:15px;font-weight:300;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}.toasted.bubble.success{background:#4caf50}.toasted.bubble.error{background:#f44336}.toasted.bubble.info{background:#3f51b5}.toasted.bubble .action{color:#8e2b0c}.toasted.outline{border-radius:30px;min-height:38px;line-height:1.1em;background-color:#fff;border:1px solid #676767;padding:0 20px;font-size:15px;color:#676767;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);font-weight:700}.toasted.outline.success{color:#4caf50;border-color:#4caf50}.toasted.outline.error{color:#f44336;border-color:#f44336}.toasted.outline.info{color:#3f51b5;border-color:#3f51b5}.toasted.outline .action{color:#607d8b}.toasted-container{position:fixed;z-index:10000}.toasted-container,.toasted-container.full-width{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}.toasted-container.full-width{max-width:86%;width:100%}.toasted-container.full-width.fit-to-screen{min-width:100%}.toasted-container.full-width.fit-to-screen .toasted:first-child{margin-top:0}.toasted-container.full-width.fit-to-screen.top-right{top:0;right:0}.toasted-container.full-width.fit-to-screen.top-left{top:0;left:0}.toasted-container.full-width.fit-to-screen.top-center{top:0;left:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.full-width.fit-to-screen.bottom-right{right:0;bottom:0}.toasted-container.full-width.fit-to-screen.bottom-left{left:0;bottom:0}.toasted-container.full-width.fit-to-screen.bottom-center{left:0;bottom:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.top-right{top:10%;right:7%}.toasted-container.top-left{top:10%;left:7%}.toasted-container.top-center{top:10%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.toasted-container.bottom-right{right:5%;bottom:7%}.toasted-container.bottom-left{left:5%;bottom:7%}.toasted-container.bottom-center{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:7%}.toasted-container.bottom-left .toasted,.toasted-container.top-left .toasted{float:left}.toasted-container.bottom-right .toasted,.toasted-container.top-right .toasted{float:right}.toasted-container .toasted{top:35px;width:auto;clear:both;margin-top:10px;position:relative;max-width:100%;height:auto;word-break:normal;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;box-sizing:inherit}.toasted-container .toasted .fa,.toasted-container .toasted .fab,.toasted-container .toasted .far,.toasted-container .toasted .fas,.toasted-container .toasted .material-icons,.toasted-container .toasted .mdi{margin-right:.5rem;margin-left:-.4rem}.toasted-container .toasted .fa.after,.toasted-container .toasted .fab.after,.toasted-container .toasted .far.after,.toasted-container .toasted .fas.after,.toasted-container .toasted .material-icons.after,.toasted-container .toasted .mdi.after{margin-left:.5rem;margin-right:-.4rem}.toasted-container .toasted .action{text-decoration:none;font-size:.8rem;padding:8px;margin:5px -7px 5px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;cursor:pointer}.toasted-container .toasted .action.icon{padding:4px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.toasted-container .toasted .action.icon .fa,.toasted-container .toasted .action.icon .material-icons,.toasted-container .toasted .action.icon .mdi{margin-right:0;margin-left:4px}.toasted-container .toasted .action.icon:hover{text-decoration:none}.toasted-container .toasted .action:hover{text-decoration:underline}@media only screen and (max-width:600px){.toasted-container{min-width:100%}.toasted-container .toasted:first-child{margin-top:0}.toasted-container.top-right{top:0;right:0}.toasted-container.top-left{top:0;left:0}.toasted-container.top-center{top:0;left:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.bottom-right{right:0;bottom:0}.toasted-container.bottom-left{left:0;bottom:0}.toasted-container.bottom-center{left:0;bottom:0;-webkit-transform:translateX(0);transform:translateX(0)}.toasted-container.bottom-center,.toasted-container.top-center{-ms-flex-align:stretch!important;align-items:stretch!important}.toasted-container.bottom-left .toasted,.toasted-container.bottom-right .toasted,.toasted-container.top-left .toasted,.toasted-container.top-right .toasted{float:none}.toasted-container .toasted{border-radius:0}}</style><link rel="stylesheet" type="text/css" href="privacy-central.securiti.ai/assets/css/chunk-7c38599f.445023e9.css" /><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-7c38599f.5007d456.js"></script><link rel="stylesheet" type="text/css" href="privacy-central.securiti.ai/assets/css/chunk-auth~chunk-edit-user-profile~chunk-set-password.4254a332.css" /><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-auth~chunk-edit-user-profile~chunk-set-password.d29c10d5.js"></script><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-auth.eec6f0a5.js"></script><style type="text/css" id="vuetify-theme-stylesheet">a { color: #1976d2; }
+.primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-lang-pt-br.f36812dd.js"></script><link rel="stylesheet" type="text/css" href="privacy-central.securiti.ai/assets/css/chunk-landing~chunk-privacy-center.b256106f.css" /><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-landing~chunk-privacy-center.9501a46e.js"></script><script charset="utf-8" src="privacy-central.securiti.ai/assets/js/chunk-landing.1bb22bdd.js"></script></head><body><noscript><strong>We're sorry but Privaci DSP doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><!--c-app--><div data-app="true" class="application c-app theme--light" id="app"><div class="v-menu__content theme--light f-user-actions" style="min-width: 20px; top: 417px; left: 1356px; transform-origin: left top; z-index: 8; display: none;"><div role="list" class="v-list v-list--dense theme--light" id="unique-menu-id"><div role="listitem"><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Mensagens</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Ver Relatório</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Imprimir Relatório</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Excluir solicitação</div></a></div></div></div><div class="v-menu__content theme--light f-user-actions" style="min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"><div role="list" class="v-list v-list--dense theme--light" id="unique-menu-id"><div role="listitem"><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Mensagens</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Ver Relatório</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Imprimir Relatório</div></a></div><div disabled="disabled" role="listitem" class="v-list--disabled"><a disabled="disabled" role="option" tabindex="0" class="v-list__tile v-list__tile--link v-list__tile--disabled theme--light"><div class="v-list__tile__title f-list-menu-title f-list-menu-title-disabled">Excluir solicitação</div></a></div></div></div><div class="v-menu__content theme--light f-list-dropdown" style="max-height: 300px; min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"><div class="v-select-list v-card theme--light"><div role="list" class="v-list theme--light"><div role="listitem" class="primary--text"><a class="v-list__tile v-list__tile--link v-list__tile--active theme--light primary--text"><div class="v-list__tile__content"><div class="v-list__tile__title">Solicitações ativas</div></div></a></div><div role="listitem"><a class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Solicitações concluídas</div></div></a></div></div></div></div><div tabindex="-1" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog f-dialog f-dialog-md v-dialog--persistent" style="display: none;"><div class="f-card v-card v-sheet theme--light"><button type="button" class="f-btn-action f-header-action-btn ma-0 v-btn theme--light" title="Fechar Modal"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">close</i></div></button><div class="v-card__text pa-4"><div class="f-text-medium-content f-color-dark-black-s100 my-2">Hi msb2@cesar.school,</div><div class="f-text-medium-content f-text-semibold f-color-dark-black-s100 mb-2">
+                    Precisamos de detalhes adicionais para processar pelo menos uma de suas solicitações de titulares de dados.
+                </div><div class="f-text-medium-content f-color-dark-black-s100">
+                    Clique em “Detalhes adicionais necessários” para preencher os dados na próxima página, necessários para processar sua solicitação. Sua resposta rápida é muito apreciada e nos ajuda a processar sua solicitação.
+                </div></div><div class="v-card__actions px-4 pb-4 pt-0"><a href="#" class="btn btn-lg vendor-secondary-background-color btn-block">Ok, got it</a></div></div></div></div><div class="v-menu__content theme--light f-nav-dropdown" style="min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"><div role="list" class="v-list theme--light" id="account-menu-id" aria-expanded="false"><div role="listitem"><a tabindex="0" role="option" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Crie sua conta" class="v-list__tile__title">Criar Conta</div></a></div><span><div role="listitem" class=""><a tabindex="0" role="option" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">Excluir conta</div></a></div></span><span class="v-tooltip v-tooltip--left"></span><div role="listitem"><a tabindex="0" role="option" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__title">Sair</div></a></div></div></div><div class="v-tooltip__content" style="left: 12px; opacity: 0; top: 12px; z-index: 0; display: none;"><span>Não é possível excluir a conta quando há solicitações de DSR ativas ou os relatórios não foram baixados</span></div><div class="v-menu__content theme--light f-nav-dropdown" style="min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"><div class="v-card v-sheet theme--light" aria-live="polite" style="max-height: 200px;"><div role="list" class="v-list theme--light" id="menu-unique-id" aria-expanded="false"><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="English" class="v-list__tile__title">English</div></a></div><div role="listitem" class="f-selected"><a role="option" aria-selected="true" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Português" class="v-list__tile__title">Português</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Français" class="v-list__tile__title">Français</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Italiano" class="v-list__tile__title">Italiano</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Español" class="v-list__tile__title">Español</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Deutsch" class="v-list__tile__title">Deutsch</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="日本語" class="v-list__tile__title">日本語</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="العربية" class="v-list__tile__title">العربية</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Norsk Bokmål" class="v-list__tile__title">Norsk Bokmål</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Български" class="v-list__tile__title">Български</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Hrvatski" class="v-list__tile__title">Hrvatski</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Čeština" class="v-list__tile__title">Čeština</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Dansk" class="v-list__tile__title">Dansk</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Nederlands" class="v-list__tile__title">Nederlands</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Eesti" class="v-list__tile__title">Eesti</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Suomi" class="v-list__tile__title">Suomi</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Ελληνικά" class="v-list__tile__title">Ελληνικά</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="हिन्दी" class="v-list__tile__title">हिन्दी</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Magyar" class="v-list__tile__title">Magyar</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Indonesia" class="v-list__tile__title">Indonesia</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="한국어" class="v-list__tile__title">한국어</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Latviešu" class="v-list__tile__title">Latviešu</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="繁體中文" class="v-list__tile__title">繁體中文</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Polski" class="v-list__tile__title">Polski</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Português Europeu" class="v-list__tile__title">Português Europeu</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Română" class="v-list__tile__title">Română</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Русский" class="v-list__tile__title">Русский</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Slovenčina" class="v-list__tile__title">Slovenčina</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Slovenščina" class="v-list__tile__title">Slovenščina</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Svenska" class="v-list__tile__title">Svenska</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="ไทย" class="v-list__tile__title">ไทย</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Türkçe" class="v-list__tile__title">Türkçe</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Українська" class="v-list__tile__title">Українська</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Tiếng Việt" class="v-list__tile__title">Tiếng Việt</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="中文" class="v-list__tile__title">中文</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="עברית" class="v-list__tile__title">עברית</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Français Canadien" class="v-list__tile__title">Français Canadien</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Shqip" class="v-list__tile__title">Shqip</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Bosanski" class="v-list__tile__title">Bosanski</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Català" class="v-list__tile__title">Català</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Melayu" class="v-list__tile__title">Melayu</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="Српски" class="v-list__tile__title">Српски</div></a></div><div role="listitem" class=""><a role="option" tabindex="0" class="v-list__tile v-list__tile--link theme--light"><div aria-label="ქართული" class="v-list__tile__title">ქართული</div></a></div></div></div></div><div tabindex="-1" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog f-modal" style="display: none;"><div class="f-card v-card v-sheet theme--light"><div class="f-modal-actions"><button type="button" class="f-btn-action v-btn theme--light" title="Fechar Modal" aria-label="Fechar Modal"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">close</i></div></button></div><div class="v-card__title"><h1 class="f-modal-title">Configurações de acessibilidade</h1></div><div class="v-card__text"><div class="f-text-big-content f-color-dark-black-s100">
+                    Configurações de contraste de cores
+                </div><div class="f-text-content f-color-dark-black-80 mt-2">
+                    Habilite alto contraste de cores para melhorar a visibilidade e contraste de cores compatível com WCAG para uma ampla variedade de usuários.
+                </div><div class="v-input mt-4 v-input--selection-controls v-input--switch theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-label="Habilite alto contraste para maior visibilidade" aria-checked="false" role="checkbox" type="checkbox" value="" /><div class="v-input--selection-controls__ripple"></div><div class="v-input--switch__track theme--light"></div><div class="v-input--switch__thumb theme--light"><!----></div></div><label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Habilite alto contraste para maior visibilidade</label></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div><div class="v-card__actions"><button type="button" class="f-btn-pri v-btn theme--light"><div class="v-btn__content">
+                    Aplicar configurações
+                </div></button><button type="button" class="f-btn-sec v-btn theme--light"><div class="v-btn__content">
+                    Cancelar
+                </div></button></div></div></div></div><div class="application--wrap"><!--c-navigation--><div class="c-navigation"><div class="f-header vendor-primary-background-color vendor-secondary-text-color d-flex align-items-center f-bg-color-dark"><div class="row align-items-center justify-space-between f-print-justify-center"><div class="col col-sm-4 order-1 order-sm-0 hidden d-lg-flex"></div><div class="col-auto col-sm-4 order-0 order-sm-1"><div class="f-header-vendor-logo text-lg-center"><a><img src="privacy-central.securiti.ai/api/v1/form/cd30fc1a-07d3-4d3a-8995-a1724f76c898/logo" alt="Logotipo Securiti AI" /></a></div></div><div class="col-auto col-sm-4 order-2 text-right f-hamburger-menu"><i aria-hidden="true" class="v-icon d-lg-none v-icon--link material-icons theme--light">menu</i><div class="f-top-right-nav hidden d-lg-block"><div class="row align-items-center justify-content-end"><!----><div class="col-auto"><div title="Idioma" aria-haspopup="true" role="button" tabindex="0" aria-controls="menu-unique-id" aria-label="Choose your language, your current language is set to: Português" class="d-flex align-items-center"><span tabindex="-1" class="v-chip f-lang-chip clickable theme--light"><span class="v-chip__content">
+                                            PT-BR
+                                        </span></span><i aria-hidden="true" class="v-icon f-size-icon-sm material-icons theme--light">expand_more</i></div><div class="v-menu" aria-labelledby="menu-unique-id"></div></div><div class="col-auto"><div aria-haspopup="true" role="button" aria-controls="account-menu-id" tabindex="0" aria-label="Abra o menu da conta" class="d-flex align-items-center"><span>Bem-vindo, msb2@cesar.school</span><i aria-hidden="true" class="v-icon f-size-icon-sm pl-1 material-icons theme--light">expand_more</i></div><div class="v-menu"></div></div></div></div></div></div></div><!----></div><main class="v-content router-view-wrapper" data-booted="true" style="padding: 0px;"><div class="v-content__wrap"><!--c-dsp-requests-page--><div class="container c-dsp-requests-page" aria-live="polite"><h1 class="f-page-heading f-text-title text-xs-center vendor-primary-text-color d-print-none">
+        Grupo Casas Bahia S.A.
+    </h1><div><div class="hidden d-lg-block d-print-none"><div class="layout f-all-stat-container justify-center"><div class="flex px-2 shrink"><div class="f-text-content"><span class="vendor-primary-text-color">Solicitações ativas</span><span class="stat-count vendor-primary-text-color">1
+                        </span></div></div><div class="flex px-2 shrink"><div class="f-text-content"><span class="vendor-primary-text-color">Solicitações concluídas</span><span class="stat-count vendor-primary-text-color">0</span></div></div><!----></div></div><div class="d-print-none"><div role="combobox" class="v-input f-text-field-primary f-large d-lg-none v-text-field v-text-field--single-line v-text-field--solo v-text-field--enclosed v-select v-input--is-label-active v-input--is-dirty theme--light"><div class="v-input__control"><div class="v-input__slot"><div class="v-select__slot"><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">Solicitações ativas</div><input readonly="readonly" type="text" autocomplete="on" aria-readonly="false" /></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon material-icons theme--light">arrow_drop_down</i></div></div></div><div class="v-menu"></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div><div class="d-lg-none"><!--c-dsp-request-list--><div class="c-dsp-request-list"><div class="card f-tenants-request-cards"><div class="card-body"><h5 class="hidden d-lg-block f-text-title f-text-semibold card-title vendor-primary-text-color">
+                1
+                Solicitações ativas
+            </h5><div class="f-table f-request-table d-lg-table vendor-primary-text-color"><div class="f-table-head hidden d-lg-table-row"><div class="d-lg-table-cell f-col-request-type">Tipo de Requisição</div><div class="d-lg-table-cell f-col-submitted">Enviado</div><div class="d-lg-table-cell">ID da solicitação</div><div class="d-lg-table-cell f-col-messages">Mensagens</div><div class="d-lg-table-cell f-col-message-btn"></div><div class="d-lg-table-cell f-col-action"></div></div><div class="d-lg-table-row f-table-row"><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Tipo de Requisição</div><div class="text-right text-lg-left"><div class="f-badge f-small text-uppercase vendor-primary-background-color d-inline-block">
+                                        Solicitação de informação
+                                    </div></div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Enviado</div><div class="text-right text-lg-left">
+                                    Verificação em andamento
+                                </div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">ID da solicitação</div><div class="text-right text-lg-left">
+                                    4b51b29f-b6a3-40c0-b00b-398fdf3be582
+                                </div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Mensagens</div><div class="text-right text-lg-left">–</div></div></div><div class="d-lg-table-cell"><div class="f-cell-label d-lg-none"></div><div class="text-right text-lg-left"><a href="#" class="btn btn-block vendor-secondary-background-color">
+                                    Confirmar
+                                </a></div></div><!----><!----><!----><!----><!----><div class="d-lg-table-cell hidden"><div class="text-xs-right"><div class="v-menu v-menu--inline" aria-labelledby="unique-menu-id"><div class="v-menu__activator"><button type="button" class="f-action-dropdown-btn ma-0 v-btn v-btn--icon theme--light" title="Mais ações" aria-haspopup="true" tabindex="0" aria-controls="unique-menu-id" aria-label="Abra o menu para solicitação"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">more_vert</i></div></button></div></div></div></div></div><!----><!----><!----></div></div></div></div></div></div><div class="hidden d-lg-block d-print-none"><!--c-dsp-request-list--><div class="c-dsp-request-list"><div class="card f-tenants-request-cards"><div class="card-body"><h5 class="hidden d-lg-block f-text-title f-text-semibold card-title vendor-primary-text-color">
+                1
+                Solicitações ativas
+            </h5><div class="f-table f-request-table d-lg-table vendor-primary-text-color"><div class="f-table-head hidden d-lg-table-row"><div class="d-lg-table-cell f-col-request-type">Tipo de Requisição</div><div class="d-lg-table-cell f-col-submitted">Enviado</div><div class="d-lg-table-cell">ID da solicitação</div><div class="d-lg-table-cell f-col-messages">Mensagens</div><div class="d-lg-table-cell f-col-message-btn"></div><div class="d-lg-table-cell f-col-action"></div></div><div class="d-lg-table-row f-table-row"><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Tipo de Requisição</div><div class="text-right text-lg-left"><div class="f-badge f-small text-uppercase vendor-primary-background-color d-inline-block">
+                                        Solicitação de informação
+                                    </div></div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Enviado</div><div class="text-right text-lg-left">
+                                    Verificação em andamento
+                                </div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">ID da solicitação</div><div class="text-right text-lg-left">
+                                    4b51b29f-b6a3-40c0-b00b-398fdf3be582
+                                </div></div></div><div class="d-lg-table-cell"><div class="d-flex align-items-center"><div class="f-cell-label d-lg-none">Mensagens</div><div class="text-right text-lg-left">–</div></div></div><div class="d-lg-table-cell"><div class="f-cell-label d-lg-none"></div><div class="text-right text-lg-left"><a href="#" class="btn btn-block vendor-secondary-background-color">
+                                    Confirmar
+                                </a></div></div><!----><!----><!----><!----><!----><div class="d-lg-table-cell hidden"><div class="text-xs-right"><div class="v-menu v-menu--inline" aria-labelledby="unique-menu-id"><div class="v-menu__activator"><button type="button" class="f-action-dropdown-btn ma-0 v-btn v-btn--icon theme--light" title="Mais ações" aria-haspopup="true" tabindex="0" aria-controls="unique-menu-id" aria-label="Abra o menu para solicitação"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">more_vert</i></div></button></div></div></div></div></div><!----><!----><!----></div></div></div></div><!--c-dsp-request-list--><div class="c-dsp-request-list"><div class="card f-tenants-request-cards"><div class="card-body"><h5 class="hidden d-lg-block f-text-title f-text-semibold card-title vendor-primary-text-color">
+                0
+                Solicitações concluídas
+            </h5><!----></div></div></div></div><!--c-print-report--><div class="c-print-report"><div class="card f-print-header pa-3"><div class="f-header-logo"><img src="privacy-central.securiti.ai/api/v1/form/cd30fc1a-07d3-4d3a-8995-a1724f76c898/logo" /></div></div><div class="f-print-report-wrapper"><div class="row mb-4 px-2"><div class="col-3"><div class="f-text-content f-color-dark-black-s70 text-uppercase">
+                    Tipo de Requisição
+                </div><div class="f-text-content f-color-default-base text-uppercase mt-1">
+                    
+                </div></div><div class="col-4"><div class="f-text-content f-color-dark-black-s70 text-uppercase">Enviado</div><div class="f-text-content f-color-default-base text-uppercase mt-1">
+                    8 de mai de 2026 às 09:08
+                </div></div><div class="col-5"><div class="f-text-content f-color-dark-black-s70 text-uppercase">ID da solicitação</div><div class="f-text-content f-color-default-base text-uppercase mt-1"></div></div></div><div class="d-flex flex-column-reverse"><div class="card f-report-details-card"><div><div class="row align-items-center f-report-header pt-4 px-3"><div class="col-6 col-lg-4"><h5 class="f-text-medium-content f-text-semibold f-color-default-base">
+                                Detalhes do relatório
+                            </h5></div></div><!----><div class="f-no-data-text vendor-primary-text-color">
+                        Usuário não encontrado: Nossa equipe concluiu a pesquisa em todos os nossos bancos de dados em busca de registros contendo suas informações. Atualmente, não mantemos nenhum dado relacionado às informações que você forneceu. Por favor, deixe-nos saber se você tiver alguma dúvida.
+                    </div></div></div><!----></div></div></div></div><!----><div class="v-dialog__container" style="display: block;"></div></div></div></main><div><!--c-ck-notice--><div class="layout c-ck-notice mt-3 px-3 pb-3 justify-center"><div class="flex shrink"><div class="f-cookie-notice-content f-text-content f-color-dark-black-s100 text-xs-center">
+            Aviso Cookie: Este portal usa um XSRF cookie para garantir a segurança e uma sessão cookie para verificar sua identidade durante a sessão. Esses cookies são estritamente necessários e não coletam nem compartilham suas informações pessoais para nenhum outro propósito.
+        </div></div></div></div><!--c-accessibility-settings-modal--><div class="c-accessibility-settings-modal"><button type="button" class="f-accessibility-settings-btn ma-0 v-btn v-btn--icon theme--light" title="Configurações de acessibilidade" aria-label="Configurações de acessibilidade"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">accessibility</i></div></button><div class="v-dialog__container" style="display: block;"></div></div></div></div><script src="privacy-central.securiti.ai/assets/js/chunk-vendors.5f737c43.js"></script><script src="privacy-central.securiti.ai/assets/js/app.f033264b.js"></script><div id="2AfKT-8Sk" role="status" aria-live="polite" aria-atomic="false" class="toasted-container top-right"></div></body></html>

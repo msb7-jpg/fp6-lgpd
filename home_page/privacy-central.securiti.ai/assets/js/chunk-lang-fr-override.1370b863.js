@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-fr-override"],{db93:function(i){i.exports=JSON.parse('{"fr":{"Object":"Objection","Rectify":"Rectification","Restrict Processing":"Limitation du traitement","object":"objection","rectify":"rectification","Country":"Pays","Pin verification failed.":"Échec de la vérification du code"}}')}}]);

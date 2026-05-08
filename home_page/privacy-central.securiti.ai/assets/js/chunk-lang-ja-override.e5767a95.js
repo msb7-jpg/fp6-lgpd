@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-ja-override"],{d64b:function(n){n.exports=JSON.parse('{"ja":{"Turkey":"トルコ"}}')}}]);

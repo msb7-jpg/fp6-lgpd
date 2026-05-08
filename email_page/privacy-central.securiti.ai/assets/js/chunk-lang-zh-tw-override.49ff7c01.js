@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-zh-tw-override"],{d81d:function(w){w.exports=JSON.parse('{"zh-tw":{"powered by":"供電"}}')}}]);

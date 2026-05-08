@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-lang-es-override"],{"4ac8":function(o){o.exports=JSON.parse('{"es":{"Port":"Portabilidad","port":"portabilidad","Sign out":"Salir","Dashboard":"Tablero"}}')}}]);
