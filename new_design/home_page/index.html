@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Solicitar Direitos - Casas Bahia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .step-inactive { display: none; }
+        .stepper-circle-active { @apply bg-blue-600 text-white; }
+        .stepper-circle-inactive { @apply bg-gray-200 text-gray-500; }
+        .stepper-text-active { @apply text-blue-600 font-bold; }
+        .stepper-text-inactive { @apply text-gray-400; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Header will be injected by JS -->
     
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Stepper Header -->
+        <div class="mb-10">
+            <div class="flex items-center justify-between relative">
+                <div class="absolute top-5 left-0 w-full h-0.5 bg-gray-200 -z-10"></div>
+                
+                <div class="flex flex-col items-center">
+                    <div id="step-circle-1" class="w-10 h-10 rounded-full flex items-center justify-center stepper-circle-active transition-all duration-300">1</div>
+                    <span id="step-text-1" class="mt-2 text-xs stepper-text-active uppercase tracking-wider">Identificação</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div id="step-circle-2" class="w-10 h-10 rounded-full flex items-center justify-center stepper-circle-inactive transition-all duration-300">2</div>
+                    <span id="step-text-2" class="mt-2 text-xs stepper-text-inactive uppercase tracking-wider">Dados</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div id="step-circle-3" class="w-10 h-10 rounded-full flex items-center justify-center stepper-circle-inactive transition-all duration-300">3</div>
+                    <span id="step-text-3" class="mt-2 text-xs stepper-text-inactive uppercase tracking-wider">Detalhes</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div id="step-circle-4" class="w-10 h-10 rounded-full flex items-center justify-center stepper-circle-inactive transition-all duration-300">4</div>
+                    <span id="step-text-4" class="mt-2 text-xs stepper-text-inactive uppercase tracking-wider">Revisão</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <form id="dsr-form" class="p-8">
+                
+                <!-- STEP 1: Identification -->
+                <div id="step-content-1" class="space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Como você se identifica?</h2>
+                        <p class="text-gray-500">Selecione seu perfil de relacionamento com as Casas Bahia.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <label class="relative flex p-4 cursor-pointer rounded-xl border border-gray-200 bg-white hover:bg-blue-50 transition-all">
+                            <input type="radio" name="user_type" value="cliente" class="mt-1 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" checked>
+                            <div class="ml-3">
+                                <span class="block text-sm font-bold text-gray-900">Cliente</span>
+                                <span class="block text-xs text-gray-500">Realizo compras no site ou lojas físicas.</span>
+                            </div>
+                        </label>
+                        <label class="relative flex p-4 cursor-pointer rounded-xl border border-gray-200 bg-white hover:bg-blue-50 transition-all">
+                            <input type="radio" name="user_type" value="colaborador" class="mt-1 h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                            <div class="ml-3">
+                                <span class="block text-sm font-bold text-gray-900">Colaborador / Ex-Colaborador</span>
+                                <span class="block text-xs text-gray-500">Trabalho ou trabalhei no Grupo.</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="pt-6">
+                        <h2 class="text-xl font-bold text-gray-900 mb-4">Qual direito deseja exercer?</h2>
+                        <select name="right_type" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+                            <option value="">Selecione uma opção...</option>
+                            <option value="acesso">Acesso aos meus dados (Confirmação e Relatório)</option>
+                            <option value="correcao">Correção de dados incompletos ou inexatos</option>
+                            <option value="exclusao">Exclusão/Eliminação de dados pessoais</option>
+                            <option value="portabilidade">Portabilidade dos dados a outro fornecedor</option>
+                            <option value="oposicao">Oposição ao tratamento de dados</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- STEP 2: Personal Data -->
+                <div id="step-content-2" class="step-inactive space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Dados Pessoais</h2>
+                        <p class="text-gray-500">Precisamos destes dados para localizar seu cadastro com segurança.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-700">Nome Completo</label>
+                            <input type="text" placeholder="Ex: João da Silva" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-700">CPF</label>
+                            <input type="text" id="cpf-input" placeholder="000.000.000-00" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-700">E-mail de Contato</label>
+                            <input type="email" placeholder="joao@exemplo.com" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-sm font-semibold text-gray-700">Data de Nascimento</label>
+                            <input type="text" id="date-input" placeholder="dd/mm/aaaa" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Details & Attachments -->
+                <div id="step-content-3" class="step-inactive space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Informações Adicionais</h2>
+                        <p class="text-gray-500">Descreva sua solicitação e anexe documentos se necessário.</p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-sm font-semibold text-gray-700">Detalhes do Pedido</label>
+                        <textarea rows="4" placeholder="Descreva de forma clara o que você deseja..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                    </div>
+
+                    <div class="border-2 border-dashed border-gray-200 rounded-xl p-8 text-center hover:border-blue-400 transition-colors cursor-pointer bg-gray-50">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+                        <p class="text-sm text-gray-600">Arraste seus documentos aqui ou <span class="text-blue-600 font-bold">clique para buscar</span></p>
+                        <p class="text-xs text-gray-400 mt-2">Formatos aceitos: PDF, JPG, PNG (Max 5MB)</p>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Summary -->
+                <div id="step-content-4" class="step-inactive space-y-6">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Revise seu Pedido</h2>
+                        <p class="text-gray-500">Verifique se todas as informações estão corretas antes de enviar.</p>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 space-y-4">
+                        <div class="flex justify-between border-b border-blue-200 pb-2">
+                            <span class="text-sm text-blue-700">Tipo de Usuário:</span>
+                            <span class="text-sm font-bold text-blue-900" id="summary-user">Cliente</span>
+                        </div>
+                        <div class="flex justify-between border-b border-blue-200 pb-2">
+                            <span class="text-sm text-blue-700">Direito Solicitado:</span>
+                            <span class="text-sm font-bold text-blue-900" id="summary-right">Acesso aos Dados</span>
+                        </div>
+                        <div class="flex justify-between border-b border-blue-200 pb-2">
+                            <span class="text-sm text-blue-700">Nome:</span>
+                            <span class="text-sm font-bold text-blue-900">João da Silva</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" class="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label class="ml-3 text-xs text-gray-500 leading-relaxed">
+                            Declaro que as informações fornecidas são verdadeiras e que estou ciente de que o prazo de resposta é de até 15 dias corridos, conforme previsto na LGPD.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="mt-12 flex justify-between pt-8 border-t border-gray-100">
+                    <button type="button" id="prev-btn" class="px-6 py-3 text-gray-500 font-bold hover:text-gray-700 transition-colors invisible">
+                        Voltar
+                    </button>
+                    <button type="button" id="next-btn" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all transform active:scale-95">
+                        Continuar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer injected by JS -->
+
+    <script src="../assets/js/components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

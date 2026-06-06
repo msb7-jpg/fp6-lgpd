@@ -1,0 +1,34 @@
+/* Custom tweaks for the redesigned DSR channel */
+
+@apply transition-all duration-300;
+
+.card {
+    @apply transition-shadow duration-300;
+}
+
+.card:hover {
+    @apply shadow-lg;
+}
+
+/* Custom scrollbar for a better look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
+
+/* Animation for the status pulsing */
+@keyframes pulse-blue {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .7; }
+}
+
+.animate-pulse-blue {
+    animation: pulse-blue 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

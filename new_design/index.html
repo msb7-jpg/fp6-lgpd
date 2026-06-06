@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de Privacidade - Casas Bahia Redesign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <img src="https://www.casasbahia.com.br/favicon.ico" alt="Logo" class="h-8 w-8 mr-2">
+                    <span class="text-xl font-bold text-blue-600">Casas Bahia <span class="text-gray-900">Privacidade</span></span>
+                </div>
+                <div class="text-sm text-gray-500 font-medium">
+                    Protótipo de Redesign LGPD
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Controle de Versões</h1>
+            <p class="mt-4 text-xl text-gray-600">Acesse e compare a experiência do usuário entre o canal antigo e o novo redesign proposto.</p>
+        </header>
+
+        <!-- Discovery Path Section -->
+        <section class="mb-12 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-xl overflow-hidden text-white p-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-2">Jornada de Descoberta</h2>
+                    <p class="text-blue-100 max-w-xl">A primeira falha crítica identificada foi a dificuldade de encontrar o canal. Veja como propomos a inclusão no ecossistema principal.</p>
+                </div>
+                <a href="discovery_mockup.html" class="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all shadow-lg transform active:scale-95">
+                    Ver Solução de Encontrabilidade
+                </a>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <!-- Home Page Section -->
+            <section class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transition-all hover:shadow-2xl">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 rounded-lg p-3">
+                            <i class="fas fa-file-contract text-2xl text-blue-600"></i>
+                        </div>
+                        <h2 class="ml-4 text-2xl font-bold text-gray-900">Formulário de Direitos</h2>
+                    </div>
+                    <p class="text-gray-600 mb-8 h-20">Página principal para o titular solicitar seus direitos previstos na LGPD (Art. 18).</p>
+                    <div class="space-y-4">
+                        <a href="../home_page/index.html" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group">
+                            <div>
+                                <span class="block text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Versão Antiga</span>
+                                <span class="text-xs text-gray-500">privacy-central.securiti.ai</span>
+                            </div>
+                            <i class="fas fa-arrow-right text-gray-400 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="home_page/index.html" class="flex items-center justify-between p-4 bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors group">
+                            <div>
+                                <span class="block text-sm font-semibold text-white">Nova Versão (Redesign)</span>
+                                <span class="text-xs text-blue-100 text-opacity-80">Modular & Layered Architecture</span>
+                            </div>
+                            <i class="fas fa-magic text-white opacity-80 group-hover:scale-110 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Email Page Section -->
+            <section class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transition-all hover:shadow-2xl">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-indigo-100 rounded-lg p-3">
+                            <i class="fas fa-user-shield text-2xl text-indigo-600"></i>
+                        </div>
+                        <h2 class="ml-4 text-2xl font-bold text-gray-900">Dashboard de Acompanhamento</h2>
+                    </div>
+                    <p class="text-gray-600 mb-8 h-20">Painel onde o usuário visualiza o status detalhado e granular de suas solicitações ativas.</p>
+                    <div class="space-y-4">
+                        <a href="../email_page/index.html" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group">
+                            <div>
+                                <span class="block text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">Versão Antiga</span>
+                                <span class="text-xs text-gray-500">Tracking Original</span>
+                            </div>
+                            <i class="fas fa-arrow-right text-gray-400 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="email_page/index.html" class="flex items-center justify-between p-4 bg-indigo-600 rounded-xl hover:bg-indigo-700 transition-colors group">
+                            <div>
+                                <span class="block text-sm font-semibold text-white">Nova Versão (Redesign)</span>
+                                <span class="text-xs text-indigo-100 text-opacity-80">UX de Nielsen Aplicada</span>
+                            </div>
+                            <i class="fas fa-chart-line text-white opacity-80 group-hover:scale-110 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 italic">
+            <p>Arquitetura: Modular & Layered Component Architecture</p>
+            <p>Data de Entrega: 12/06/2026</p>
+        </footer>
+    </main>
+</body>
+</html>
